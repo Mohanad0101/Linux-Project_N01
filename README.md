@@ -954,6 +954,15 @@ URL → config/urls.py → portal/urls.py → view function
 ## 26. Проверка Django
 
 ```bash
+
+python manage.py collectstatic
+
+sudo chmod o+x /home/student
+sudo chmod o+x /home/student/linux-web-Project-01
+sudo chmod o+x /home/student/linux-web-Project-01/django_portal
+sudo chmod -R o+rX /home/student/linux-web-Project-01/django_portal/staticfiles
+
+
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver 0.0.0.0:8001
